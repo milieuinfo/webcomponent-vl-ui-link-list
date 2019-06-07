@@ -25,7 +25,7 @@
     "release:prepare:build": "uglifyjs --compress --mangle --output vl-link-list.src.js -- *.src.js",
     "release:prepare:imports": "replace '/node_modules/vl-ui-core/vl-core.src.js' '/node_modules/vl-ui-core/vl-core.js' vl-link-list.src.js",
     "release:prepare:css": "replace '\\\\.\\\\./style.css' '/node_modules/vl-ui-link-list/style.css' vl-link-list.src.js",
-    "release:prepare:commit": "git add -f vl-link-list.src.js && git commit --amend --no-edit && git pull",
+    "release:prepare:commit": "git add -f vl-link-list.js && git commit --amend --no-edit && git pull",
     "release:testless": "np --yolo",
     "demo": "http-server"
   },
