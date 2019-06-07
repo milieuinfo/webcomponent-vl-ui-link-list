@@ -1,10 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>vl-link-list voorbeeld</title>
+  <script type="module" src="demo.js"></script>
+  <script type="module"
+          src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script type="module" src="../vl-link-list.src.js"></script>
+  <script type="module" src="../node_modules/vl-ui-link/vl-link.js"></script>
+  <script type="module" src="../node_modules/vl-ui-icon/vl-icon.js"></script>
 </head>
+
 <body>
-$END$
+<h1>vl-ui-link-list demo</h1>
+<p>
+  <a href="https://overheid.vlaanderen.be/webuniversum/v3/documentation/components/vl-ui-link-list">Meer
+    voorbeelden en documentatie</a>
+</p>
+
+<div>
+  <h2>Link list</h2>
+  <pre>
+      <code class="line-numbers language-markup">
+        <div class="demo">
+        &lt;ul is="vl-link-list"&gt;
+          &lt;li is="vl-link-list-item"&gt;
+            &lt;a is="vl-link" href="#"&gt;&lt;span is="vl-icon" icon="arrow-right-fat" before&gt;&lt;/span&gt;Ga naar index&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li is="vl-link-list-item"&gt;
+            &lt;a is="vl-link" href="#"&gt;&lt;span is="vl-icon" icon="arrow-right-fat" before&gt;&lt;/span&gt;Terug naar overzicht&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        </div>
+      </code>
+    </pre>
+  <div class="demo">
+    <ul is="vl-link-list">
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="#"><span is="vl-icon" icon="arrow-right-fat" before></span>Ga naar
+          index</a>
+      </li>
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="#"><span is="vl-icon" icon="arrow-right-fat" before></span>Terug naar
+          overzicht</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div>
+  <h2>Link list small</h2>
+  <pre>
+      <code class="line-numbers language-markup">
+        <div class="demo">
+        &lt;ul is="vl-link-list" small&gt;
+          &lt;li is="vl-link-list-item"&gt;
+            &lt;a is="vl-link" href="#"&gt;&lt;span is="vl-icon" icon="arrow-right-fat" before&gt;&lt;/span&gt;Ga naar index&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li is="vl-link-list-item"&gt;
+            &lt;a is="vl-link" href="#"&gt;&lt;span is="vl-icon" icon="arrow-right-fat" before&gt;&lt;/span&gt;Terug naar overzicht&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        </div>
+      </code>
+    </pre>
+  <div class="demo">
+    <ul is="vl-link-list" small>
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="#"><span is="vl-icon" icon="arrow-right-fat" before></span>Ga naar
+          index</a>
+      </li>
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="#"><span is="vl-icon" icon="arrow-right-fat" before></span>Terug naar
+          overzicht</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div>
+  <h2>Link list inline</h2>
+  <pre>
+      <code class="line-numbers language-markup">
+        <div class="demo">
+        &lt;ul is="vl-link-list" inline&gt;
+          &lt;li is="vl-link-list-item"&gt;
+            &lt;a is="vl-link" href="#"&gt;&lt;span is="vl-icon" icon="arrow-right-fat" before&gt;&lt;/span&gt;Ga naar index&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li is="vl-link-list-item"&gt;
+            &lt;a is="vl-link" href="#"&gt;&lt;span is="vl-icon" icon="arrow-right-fat" before&gt;&lt;/span&gt;Terug naar overzicht&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        </div>
+      </code>
+    </pre>
+  <div class="demo">
+    <ul is="vl-link-list" inline>
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="#"><span is="vl-icon" icon="arrow-right-fat" before></span>Ga naar
+          index</a>
+      </li>
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="#"><span is="vl-icon" icon="arrow-right-fat" before></span>Terug naar
+          overzicht</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div>
+  <h2>Link list bordered</h2>
+  <pre>
+      <code class="line-numbers language-markup">
+        <div class="demo">
+        &lt;ul is="vl-link-list" bordered&gt;
+          &lt;li is="vl-link-list-item"&gt;
+            &lt;a is="vl-link" href="#"&gt;&lt;span is="vl-icon" icon="arrow-right-fat" before&gt;&lt;/span&gt;Ga naar index&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li is="vl-link-list-item"&gt;
+            &lt;a is="vl-link" href="#"&gt;&lt;span is="vl-icon" icon="arrow-right-fat" before&gt;&lt;/span&gt;Terug naar overzicht&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        </div>
+      </code>
+    </pre>
+  <div class="demo">
+    <ul is="vl-link-list" bordered>
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="#"><span is="vl-icon" icon="arrow-right-fat" before></span>Ga naar
+          index</a>
+      </li>
+      <li is="vl-link-list-item">
+        <a is="vl-link" href="#"><span is="vl-icon" icon="arrow-right-fat" before></span>Terug naar
+          overzicht</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div>
+  <h2>Link list spotlight</h2>
+  <p>Niet geïmplementeerd</p>
+</div>
+
 </body>
 </html>
