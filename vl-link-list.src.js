@@ -1,3 +1,4 @@
+import '/node_modules/vl-ui-icon/vl-icon.js';
 import {NativeVlElement} from "/node_modules/vl-ui-core/vl-core.js";
 
 export class VlLinkList extends NativeVlElement(HTMLUListElement) {
@@ -23,7 +24,7 @@ export class VlLinkListItem extends NativeVlElement(HTMLLIElement) {
     this.classList.add("vl-link-list__item");
     this._links.forEach(link => {
       link.insertAdjacentHTML("afterBegin",
-          '<span class="vl-icon vl-icon--before vl-vi vl-vi-nav-right"></span>')
+          '<span is="vl-icon" icon="nav-right" before></span>')
     })
   }
 
