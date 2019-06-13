@@ -23,7 +23,7 @@ export class VlLinkListItem extends NativeVlElement(HTMLLIElement) {
     this.classList.add("vl-link-list__item");
     this._links.forEach(link => {
       link.insertAdjacentHTML("afterBegin",
-          '<span is="vl-icon" icon="arrow-right-fat" before></span>AHA')
+          '<span class="vl-icon vl-icon--before vl-vi vl-vi-nav-right"></span>')
     })
   }
 
@@ -34,6 +34,8 @@ export class VlLinkListItem extends NativeVlElement(HTMLLIElement) {
   get _links() {
     return this.querySelectorAll("[is='vl-link']")
   }
-};customElements.define("vl-link-list", VlLinkList,
-    {extends: "ul"}), customElements.define("vl-link-list-item", VlLinkListItem,
+};
+customElements.define("vl-link-list", VlLinkList,
+    {extends: "ul"});
+customElements.define("vl-link-list-item", VlLinkListItem,
     {extends: "li"});
