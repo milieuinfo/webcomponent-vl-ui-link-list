@@ -38,6 +38,7 @@
     "vl-ui-icon": "^2.0.3"
   },
   "devDependencies": {
+    "@govflanders/vl-ui-popover": "3.7.2",
     "@govflanders/vl-ui-link-list": "3.7.2",
     "@govflanders/vl-ui-core": "3.7.2",
     "wct-browser-legacy": "1.0.2",
