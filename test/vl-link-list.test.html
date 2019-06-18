@@ -48,7 +48,7 @@
 <script>
   suite('vl-link-list', () => {
 
-    test('heeft de vl-link-list class', () => {
+    test('heeft vl-link-list class', () => {
       const element = fixture('vl-link-list-fixture');
       assert.isTrue(element.classList.contains('vl-link-list'));
     });
@@ -56,7 +56,7 @@
 
   suite('vl-link-list small', () => {
 
-    test('heeft de vl-link-list--small class', () => {
+    test('heeft vl-link-list--small class', () => {
       const element = fixture('vl-link-list--small-fixture');
       assert.isTrue(element.classList.contains('vl-link-list'));
       assert.isTrue(element.classList.contains('vl-link-list--small'));
@@ -65,7 +65,7 @@
 
   suite('vl-link-list inline', () => {
 
-    test('heeft de vl-link-list--inline class', () => {
+    test('heeft vl-link-list--inline class', () => {
       const element = fixture('vl-link-list--inline-fixture');
       assert.isTrue(element.classList.contains('vl-link-list'));
       assert.isTrue(element.classList.contains('vl-link-list--inline'));
@@ -74,7 +74,7 @@
 
   suite('vl-link-list', () => {
 
-    test('heeft de vl-link-list--bordered class', () => {
+    test('heeft vl-link-list--bordered class', () => {
       const element = fixture('vl-link-list--bordered-fixture');
       assert.isTrue(element.classList.contains('vl-link-list'));
       assert.isTrue(element.classList.contains('vl-link-list--bordered'));
@@ -83,7 +83,7 @@
 
   suite('vl-link-list-item', () => {
 
-    test('heeft de vl-link-list__item class', () => {
+    test('heeft vl-link-list__item class', () => {
       const element = fixture('vl-link-list-item-fixture');
       assert.isTrue(element.classList.contains('vl-link-list__item'));
     });
@@ -91,10 +91,8 @@
     test(',internal link begint met een vl-icon(nav-right)', () => {
       const element = fixture('vl-link-list-item-fixture');
       const links = element.querySelectorAll('[is="vl-link"]');
-      console.log("links:" + JSON.stringify(links));
-      assert.equal(links.length, 2);
-      links.forEach(l => {
-        const span = l.querySelector('[is="vl-icon"]');
+      links.forEach(link => {
+        const span = link.querySelector('[is="vl-icon"]');
         assert.equal(span.getAttribute('icon'), 'nav-right');
         assert.isTrue(span.hasAttribute('before'));
       });
