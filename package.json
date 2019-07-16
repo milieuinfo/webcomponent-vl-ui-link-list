@@ -38,16 +38,16 @@
     "vl-ui-icon": "^2.0.4"
   },
   "devDependencies": {
-    "@govflanders/vl-ui-popover": "3.7.2",
-    "@govflanders/vl-ui-link-list": "3.7.2",
     "@govflanders/vl-ui-core": "3.7.2",
-    "wct-browser-legacy": "1.0.2",
-    "web-component-tester": "6.9.2",
-    "replace": "1.1.0",
-    "np": "3.0.4",
-    "uglify-js-es6": "2.8.9",
+    "@govflanders/vl-ui-link-list": "3.7.2",
+    "@govflanders/vl-ui-popover": "3.7.2",
     "http-server": "0.11.1",
-    "vl-ui-util": "1.0.6",
-    "vl-ui-link": "1.1.1"
+    "np": "3.0.4",
+    "replace": "1.1.0",
+    "uglify-js-es6": "2.8.9",
+    "vl-ui-link": "1.1.1",
+    "vl-ui-util": "1.1.0",
+    "wct-browser-legacy": "1.0.2",
+    "web-component-tester": "6.9.2"
   }
 }
