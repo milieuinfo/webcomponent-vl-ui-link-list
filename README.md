@@ -1,7 +1,7 @@
 # vl-ui-link-list
 ![GitHub issues](https://img.shields.io/github/issues-raw/milieuinfo/webcomponent-vl-ui-link-list) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/milieuinfo/webcomponent-vl-ui-link-list) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/milieuinfo/webcomponent-vl-ui-link-list)
 
-vl-ui-link-list
+Gebruik een link list om aan de gebruiker een lijst te tonen van gelijkaardige items. Elk item in de lijst linkt naar een andere pagina.
 
 ## Installatie
 ``` bash
