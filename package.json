@@ -1,7 +1,9 @@
 {
   "name": "vl-ui-link-list",
   "version": "1.0.11",
-  "description": "vl-ui-link-list",
+  "description": "Gebruik een link list om aan de gebruiker een lijst te tonen van gelijkaardige items. Elk item in de lijst linkt naar een andere pagina.",
+  "author": "DIDM",
+  "license": "MIT",
   "main": "./src/index.js",
   "exports": {
     "require": "./index.js",
@@ -9,16 +11,14 @@
     "node": "./index.js",
     "default": "./index.js"
   },
+  "homepage": "https://github.com/milieuinfo/webcomponent-vl-ui-link-list#readme",
+  "bugs": {
+    "url": "https://github.com/milieuinfo/webcomponent-vl-ui-link-list/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/milieuinfo/webcomponent-vl-ui-link-list.git"
   },
-  "author": "DIDM",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/milieuinfo/webcomponent-vl-ui-link-list/issues"
-  },
-  "homepage": "https://github.com/milieuinfo/webcomponent-vl-ui-link-list#readme",
   "publishConfig": {
     "registry": "http://artifactory-pr-build.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/"
   },
@@ -64,7 +64,7 @@
   },
   "peerDependencies": {
     "vl-ui-core": "^4.0.0",
-    "vl-ui-icon": "^2.1.0"
+    "vl-ui-icon": "^3.0.0"
   },
   "devDependencies": {
     "@govflanders/vl-ui-core": "3.9.1",
