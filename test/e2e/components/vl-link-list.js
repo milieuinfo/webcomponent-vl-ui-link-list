@@ -1,9 +1,20 @@
 const { VlElement } = require('vl-ui-core').Test;
+const { By } = require('selenium-webdriver');
 
 class VlLinkList extends VlElement {  
-    constructor(driver, selector) {
-        super(driver, selector);
+
+    async getListItems() {
+        return this.findElements(By.css('[is="vl-link-list-item"]'));
+
     }
+    async getListItem(index) {
+        const listItems = await this.getListItems();
+        return new VlLinkListItem(this.driver, listItems[index]);
+    }
+
+}
+
+class VlLinkListItem extends VlElement {
 }
 
 module.exports = VlLinkList;

@@ -6,6 +6,10 @@ class VlLinkListPage extends Page {
         return new VlLinkList(this.driver, selector);
     }
 
+    async getLinkList() {
+        return this._getLinkList('#link-list');
+    }
+
     async load() {
         await super.load(Config.baseUrl + '/demo/vl-link-list.html');
     }

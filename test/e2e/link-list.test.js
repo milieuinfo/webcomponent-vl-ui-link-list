@@ -9,7 +9,9 @@ describe('vl-link-list', async () => {
         return vlLinkListPage.load();
     });
 
-    it("Dummy test om de browsers te sluiten", () => {
-    	assert.isTrue(true);
+    it ("Als gebruiker zie ik het juiste aantal list items voor een linked list", async() => {
+        const linkList = await vlLinkListPage.getLinkList();
+        const aantalListItems = await linkList.getListItems();
+        assert.equal(aantalListItems.length, 2);
     });
 });
