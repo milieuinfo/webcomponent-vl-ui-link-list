@@ -16,10 +16,6 @@ class VlLinkList extends VlElement {
 }
 
 class VlLinkListItem extends VlElement {
-    
-    async getLink() {
-        return new VlLink(this.driver, await this.findElement(By.css('[is="vl-link"]')));
-    }
-
 }
+
 module.exports = VlLinkList;
