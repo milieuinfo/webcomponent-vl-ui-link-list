@@ -1,5 +1,4 @@
 const { VlElement } = require('vl-ui-core').Test;
-const { VlLink } = require('vl-ui-link').Test;
 const { By } = require('selenium-webdriver');
 
 class VlLinkList extends VlElement {  
