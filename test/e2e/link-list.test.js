@@ -12,6 +12,6 @@ describe('vl-link-list', async () => {
     it ("Als gebruiker zie ik het juiste aantal list items voor een linked list", async() => {
         const linkList = await vlLinkListPage.getLinkList();
         const aantalListItems = await linkList.getListItems();
-        await assert.equal(aantalListItems.length, 2);
+        assert.equal(aantalListItems.length, 2);
     });
 });
