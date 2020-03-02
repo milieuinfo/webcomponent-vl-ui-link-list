@@ -9,7 +9,17 @@ describe('vl-link-list', async () => {
         return vlLinkListPage.load();
     });
 
-    it("Dummy test om de browsers te sluiten", () => {
-    	assert.isTrue(true);
+    it("Als gebruiker zie ik de tekst van een link-list-item", async() => {
+        const linkList = await vlLinkListPage.getLinkList();
+        const listItem = await linkList.getListItem(1);
+        const link = await listItem.getLink();
+
+        await assert.eventually.equal(link.getText(), 'Terug naar overzicht');
     });
+
+    it ("Als gebruiker zie ik het juiste aantal list items voor een linked list", async() => {
+        const linkList = await vlLinkListPage.getLinkList();
+        const aantalListItems = await linkList.getListItems();
+        await assert.equal(aantalListItems.length, 2);
+    })
 });
