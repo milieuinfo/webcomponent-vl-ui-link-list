@@ -1,5 +1,5 @@
 import 'vl-ui-icon';
-import {NativeVlElement, define} from "/node_modules/vl-ui-core/dist/vl-core.js";
+import {NativeVlElement, define} from 'vl-ui-core';
 
 /**
  * VlLinkList

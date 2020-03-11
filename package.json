@@ -56,6 +56,6 @@
     "@govflanders/vl-ui-link-list": "3.9.1",
     "@govflanders/vl-ui-popover": "3.9.1",
     "vl-ui-link": "^4.0.0",
-    "vl-ui-util": "^5.0.7"
+    "vl-ui-util": "^5.0.9"
   }
 }
