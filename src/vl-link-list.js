@@ -40,7 +40,7 @@ export class VlLinkListItem extends NativeVlElement(HTMLLIElement) {
     this.classList.add("vl-link-list__item");
     this._links.forEach(link => {
       link.insertAdjacentHTML("afterBegin",
-          '<span is="vl-icon" icon="nav-right" before></span>')
+          '<span is="vl-icon" data-vl-icon="nav-right" data-vl-before></span>')
     })
   }
 
