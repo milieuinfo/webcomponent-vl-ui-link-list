@@ -1,17 +1,17 @@
 import '/node_modules/vl-ui-icon/dist/vl-icon.js';
-import {NativeVlElement, define} from "/node_modules/vl-ui-core/dist/vl-core.js";
+import {nativeVlElement, define} from "/node_modules/vl-ui-core/dist/vl-core.js";
 
 /**
  * VlLinkList
  * @class
  * @classdesc Class die een lijst van links kan weergeven.
- * @extends NativeVlElement
+ * @extends nativeVlElement
  * 
  * @see {@link https://www.github.com/milieuinfo/webcomponent-vl-ui-link-list/releases/latest|Release notes}
  * @see {@link https://www.github.com/milieuinfo/webcomponent-vl-ui-link-list/issues|Issues}
  * @see {@link https://webcomponenten.omgeving.vlaanderen.be/demo/vl-link-list.html|Demo}
  */
-export class VlLinkList extends NativeVlElement(HTMLUListElement) {
+export class VlLinkList extends nativeVlElement(HTMLUListElement) {
   connectedCallback() {
     this.classList.add("vl-link-list")
   }
@@ -29,13 +29,13 @@ export class VlLinkList extends NativeVlElement(HTMLUListElement) {
  * VlLinkListItem
  * @class
  * @classdesc Class die een item uit de {@link VlLinkList} weergeeft.
- * @extends NativeVlElement
+ * @extends nativeVlElement
  * 
  * @see {@link https://www.github.com/milieuinfo/webcomponent-vl-ui-link-list/releases/latest|Release notes}
  * @see {@link https://www.github.com/milieuinfo/webcomponent-vl-ui-link-list/issues|Issues}
  * @see {@link https://webcomponenten.omgeving.vlaanderen.be/demo/vl-link-list.html|Demo}
  */
-export class VlLinkListItem extends NativeVlElement(HTMLLIElement) {
+export class VlLinkListItem extends nativeVlElement(HTMLLIElement) {
   connectedCallback() {
     this.classList.add("vl-link-list__item");
     this._links.forEach(link => {

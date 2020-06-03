@@ -47,7 +47,6 @@
 
 <script>
   suite('vl-link-list', () => {
-
     test('heeft vl-link-list class', () => {
       const element = fixture('vl-link-list-fixture');
       assert.isTrue(element.classList.contains('vl-link-list'));
@@ -55,7 +54,6 @@
   });
 
   suite('vl-link-list small', () => {
-
     test('heeft vl-link-list--small class', () => {
       const element = fixture('vl-link-list--small-fixture');
       assert.isTrue(element.classList.contains('vl-link-list'));
@@ -64,7 +62,6 @@
   });
 
   suite('vl-link-list inline', () => {
-
     test('heeft vl-link-list--inline class', () => {
       const element = fixture('vl-link-list--inline-fixture');
       assert.isTrue(element.classList.contains('vl-link-list'));
@@ -73,7 +70,6 @@
   });
 
   suite('vl-link-list', () => {
-
     test('heeft vl-link-list--bordered class', () => {
       const element = fixture('vl-link-list--bordered-fixture');
       assert.isTrue(element.classList.contains('vl-link-list'));
@@ -82,22 +78,21 @@
   });
 
   suite('vl-link-list-item', () => {
-
     test('heeft vl-link-list__item class', () => {
       const element = fixture('vl-link-list-item-fixture');
       assert.isTrue(element.classList.contains('vl-link-list__item'));
     });
 
-    test(',internal link begint met een vl-icon(nav-right)', () => {
+    test('internal link begint met een vl-icon(nav-right)', () => {
       const element = fixture('vl-link-list-item-fixture');
       const links = element.querySelectorAll('[is="vl-link"]');
-      links.forEach(link => {
+      links.forEach((link) => {
         const span = link.querySelector('[is="vl-icon"]');
         assert.equal(span.getAttribute('icon'), 'nav-right');
-        assert.isTrue(span.hasAttribute('before'));
+        assert.isTrue(span.hasAttribute('data-vl-before'));
       });
-    })
-  })
+    });
+  });
 
 </script>
 </body>
