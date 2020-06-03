@@ -80,7 +80,6 @@
   suite('vl-link-list-item', () => {
     test('heeft vl-link-list__item class', () => {
       const element = fixture('vl-link-list-item-fixture');
-      console.log(element.classList);
       assert.isTrue(element.classList.contains('vl-link-list__item'));
     });
 
@@ -90,8 +89,6 @@
       links.forEach((link) => {
         const span = link.querySelector('[is="vl-icon"]');
         assert.equal(span.getAttribute('icon'), 'nav-right');
-        console.log('hier loopt het fout');
-      console.log(span)
         assert.isTrue(span.hasAttribute('data-vl-before'));
       });
     });
