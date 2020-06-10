@@ -1,6 +1,6 @@
-import vl-ui-icon;
-import {nativeVlElement} from vl-ui-core;
-import {define} from vl-ui-core;
+import 'vl-ui-icon';
+import {nativeVlElement} from 'vl-ui-core';
+import {define} from 'vl-ui-core';
 
 /**
  * VlLinkList
