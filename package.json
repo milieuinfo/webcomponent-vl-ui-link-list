@@ -47,7 +47,7 @@
   "devDependencies": {
     "@govflanders/vl-ui-core": "^3.9.2",
     "@govflanders/vl-ui-link-list": "3.9.2",
-    "@govflanders/vl-ui-popover": "3.9.1",
+    "@govflanders/vl-ui-popover": "3.9.2",
     "vl-ui-link": "^4.0.3",
     "vl-ui-util": "^5.2.8"
   }
