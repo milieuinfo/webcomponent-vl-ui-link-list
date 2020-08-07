@@ -8,6 +8,7 @@ import {define} from 'vl-ui-core';
  * @classdesc Class die een lijst van links kan weergeven.
  *
  * @extends HTMLUListElement
+ * @mixes nativeVlElement
  *
  * @see {@link https://www.github.com/milieuinfo/webcomponent-vl-ui-link-list/releases/latest|Release notes}
  * @see {@link https://www.github.com/milieuinfo/webcomponent-vl-ui-link-list/issues|Issues}
@@ -33,6 +34,7 @@ export class VlLinkList extends nativeVlElement(HTMLUListElement) {
  * @classdesc Class die een item uit de {@link VlLinkList} weergeeft.
  *
  * @extends HTMLLIElement
+ * @mixes nativeVlElement
  *
  * @see {@link https://www.github.com/milieuinfo/webcomponent-vl-ui-link-list/releases/latest|Release notes}
  * @see {@link https://www.github.com/milieuinfo/webcomponent-vl-ui-link-list/issues|Issues}
@@ -48,7 +50,7 @@ export class VlLinkListItem extends nativeVlElement(HTMLLIElement) {
   }
 
   get _links() {
-    return this.querySelectorAll('[is=\'vl-link\']');
+    return this.querySelectorAll('[is="vl-link"]');
   }
 }
 
