@@ -76,6 +76,8 @@
   });
 
   suite('vl-link-list-item', () => {
+    const should = chai.should();
+
     test('heeft vl-link-list__item class', () => {
       const element = fixture('vl-link-list-item-fixture');
       assert.isTrue(element.classList.contains('vl-link-list__item'));
