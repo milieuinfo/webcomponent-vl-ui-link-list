@@ -1,6 +1,4 @@
-import '/node_modules/vl-ui-icon/dist/vl-icon.js';
-import {nativeVlElement} from '/node_modules/vl-ui-core/dist/vl-core.js';
-import {define} from '/node_modules/vl-ui-core/dist/vl-core.js';
+import {nativeVlElement, define} from '/node_modules/vl-ui-core/dist/vl-core.js';
 
 /**
  * VlLinkList
@@ -44,8 +42,7 @@ export class VlLinkListItem extends nativeVlElement(HTMLLIElement) {
   connectedCallback() {
     this.classList.add('vl-link-list__item');
     this._links.forEach((link) => {
-      link.insertAdjacentHTML('afterBegin',
-          '<span is="vl-icon" data-vl-icon="nav-right" data-vl-before></span>');
+      link.insertAdjacentHTML('afterBegin', '<i class="vl-link__icon vl-link__icon--before vl-vi vl-vi-arrow-right-fat" aria-hidden="true"></i>');
     });
   }
 
