@@ -48,8 +48,8 @@
     "@govflanders/vl-ui-core": "^4.0.5",
     "@govflanders/vl-ui-link-list": "^3.11.5",
     "@govflanders/vl-ui-popover": "^3.11.5",
-    "vl-ui-link": "^4.0.5",
     "vl-ui-body": "^1.0.4",
-    "vl-ui-util": "^5.2.12"
+    "vl-ui-link": "^4.0.5",
+    "vl-ui-util": "^5.2.15"
   }
 }
