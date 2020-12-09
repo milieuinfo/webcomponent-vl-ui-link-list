@@ -1,6 +1,6 @@
 {
   "name": "vl-ui-link-list",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "Gebruik een link list om aan de gebruiker een lijst te tonen van gelijkaardige items. Elk item in de lijst linkt naar een andere pagina.",
   "author": "DIDM",
   "license": "MIT",
