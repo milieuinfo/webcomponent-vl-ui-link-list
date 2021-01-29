@@ -1,4 +1,1 @@
-module.exports = {
-  VlLinkList: require('../dist/vl-link-list.src.js').VlLinkList,
-  VlLinkListItem: require('../dist/vl-link-list.src.js').VlLinkListItem,
-};
+export * from '../dist/vl-link-list.src.js';
