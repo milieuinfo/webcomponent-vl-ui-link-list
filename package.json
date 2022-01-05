@@ -45,7 +45,7 @@
     "vl-ui-icon": "^5.2.1"
   },
   "devDependencies": {
-    "@govflanders/vl-ui-core": "^4.1.24",
+    "@govflanders/vl-ui-core": "^11.0.0",
     "@govflanders/vl-ui-link-list": "^3.12.17",
     "@govflanders/vl-ui-popover": "^3.12.17",
     "vl-ui-body": "^1.0.8",
